@@ -1,0 +1,26 @@
+.resume-nav, .resume { width: min(48rem, calc(100% - 2rem)); margin-inline: auto; }
+.resume-nav { display: flex; align-items: center; justify-content: space-between; gap: .8rem; padding-block: .85rem; }
+.resume-nav button { cursor: pointer; font-family: inherit; }
+.resume { padding: clamp(1rem, 5vw, 2.5rem); margin-bottom: 1.5rem; background: white; border: 1px solid var(--line); border-radius: .75rem; }
+.resume header { margin-bottom: 1rem; }
+.resume h1 { margin: 0 0 .2em; font-size: clamp(2rem, 6vw, 2.8rem); }
+.resume-role { font-weight: 750; color: var(--accent); }
+.resume section { margin-top: 1.05rem; }
+.resume h2 { padding-bottom: .2rem; border-bottom: 1px solid var(--line); font-size: 1.2rem; margin-bottom: .5rem; }
+.resume h3 { font-size: 1.02rem; }
+.resume ul { padding-left: 1.3rem; margin: .25rem 0 .68rem; }
+.resume li + li { margin-top: .15rem; }
+.resume .stack { color: var(--muted); }
+.resume a { overflow-wrap: anywhere; }
+
+@page { size: A4; margin: 14mm 16mm; }
+@media print {
+  .resume-page { background: white; color: #151d22; font-size: 10pt; line-height: 1.55; }
+  .resume-nav { display: none; }
+  .resume { width: auto; margin: 0; padding: 0; border: none; border-radius: 0; }
+  .resume h1 { font-size: 26pt; }
+  .resume h2 { font-size: 13pt; }
+  .resume h3 { font-size: 11pt; }
+  .resume section { break-inside: avoid; }
+  .resume a { text-decoration: none; }
+}

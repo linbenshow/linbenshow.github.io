@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="林聖邦 Ben 的公開履歷。">
+  <title>林聖邦 Ben｜履歷</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="resume.css">
+  <script src="resume.js" defer></script>
+</head>
+<body class="resume-page">
+  <nav class="resume-nav" aria-label="履歷操作">
+    <a href="index.html">回作品集</a>
+    <button type="button" class="button primary" id="print-resume">列印／存成 PDF</button>
+  </nav>
+  <main class="resume">
+    <header>
+      <h1>林聖邦 Ben</h1>
+      <p class="resume-role">Python 後端工程師</p>
+      <p><a href="mailto:linsben93@gmail.com">linsben93@gmail.com</a> · <a href="https://github.com/linbenshow">github.com/linbenshow</a></p>
+    </header>
+    <p>具 Python、FastAPI 後端開發與最佳化建模經驗，曾將配送需求轉成可驗證的求解規則，也使用 AI 輔助將 3D 裝箱求解邏輯從 Python 移植至 TypeScript。</p>
+    <section aria-labelledby="experience">
+      <h2 id="experience">專案經歷</h2>
+      <h3>物流作業標準化輔助系統｜畢業專題</h3>
+      <p class="stack">Python、FastAPI、Google OR-Tools</p>
+      <ul>
+        <li>負責 FastAPI 後端與路線求解，整合訂單驗證、行車時間矩陣與快取，支援客戶改約及途中新增訂單後的路線重排。</li>
+        <li>設計客製化路線求解模型，將優先客戶的提早收貨需求量化為期望送達時間與超時懲罰，納入 OR-Tools 求解目標。</li>
+      </ul>
+      <h3>3D 棧板裝箱規劃系統｜Side Project</h3>
+      <p class="stack">Python、TypeScript、React、Three.js、Vitest · <a href="https://github.com/linbenshow/pallet-packing-3d">GitHub</a></p>
+      <ul>
+        <li>先以 Python 開發裝箱原型，再用 AI 輔助將求解邏輯移植至 TypeScript，支援網頁混裝規劃、多棧板分配與 3D 堆疊預覽。</li>
+        <li>使用 Vitest 驗證多棧板分配，1,920 箱測試案例全數完成分配，且各棧板均通過程式內的約束檢查。</li>
+      </ul>
+    </section>
+    <section aria-labelledby="skills">
+      <h2 id="skills">技術技能</h2>
+      <p><strong>程式語言與標記</strong>｜Python、Java、C++、C、TypeScript、HTML</p>
+      <p><strong>框架與函式庫</strong>｜FastAPI、Google OR-Tools、React、Three.js、Vitest</p>
+      <p><strong>開發工具</strong>｜Git、GitHub、VS Code　<strong>AI 輔助開發</strong>｜Codex、Antigravity</p>
+    </section>
+    <section aria-labelledby="education">
+      <h2 id="education">學歷、證照與團隊經驗</h2>
+      <p><strong>國立勤益科技大學資訊工程系</strong>｜預計 2027 年 6 月畢業</p>
+      <p><strong>相關課程</strong>｜程式設計與實習（一）92 分、程式設計與實習（二）96 分</p>
+      <p><strong>技術士證照</strong>｜數位電子乙級、工業電子丙級、電腦軟體應用丙級</p>
+      <p><strong>資工系學會活動總召／副召</strong>｜人員安排、活動排程與進度追蹤</p>
+    </section>
+  </main>
+</body>
+</html>
