@@ -9,8 +9,17 @@
   <link rel="stylesheet" href="styles.css?v=20261126-2">
   <style>
     /* Keep screenshots inside their columns even when a cached stylesheet is served. */
-    .project-screenshot img { display: block; width: 100%; max-width: 100%; height: auto; }
+    .project-visual { justify-self: center; width: 100%; text-align: center; }
+    .project-screenshot img { display: block; width: 100%; max-width: 100%; height: auto; margin-inline: auto; }
+    #project-preview { width: max-content; max-width: min(62rem, calc(100% - 2rem)); max-height: calc(100% - 2rem); margin: auto; padding: .75rem; color: #10283b; background: #fff; border: 1px solid #dbe5e8; border-radius: .85rem; }
+    #project-preview::backdrop { background: rgb(10 25 36 / 74%); }
+    #project-preview .preview-toolbar { display: flex; justify-content: flex-end; margin-bottom: .5rem; }
+    #project-preview .preview-close { min-height: 2.5rem; padding: .35rem .75rem; border: 1px solid #cbdadd; border-radius: .4rem; color: inherit; background: #f7fafb; font: inherit; font-weight: 700; cursor: pointer; }
+    #project-preview .preview-close:focus-visible { outline: 3px solid #16897c; outline-offset: 2px; }
+    #project-preview img { display: block; width: auto; height: auto; max-width: 100%; max-height: calc(100vh - 6rem); max-height: calc(100dvh - 6rem); margin-inline: auto; object-fit: contain; }
+    html:has(#project-preview[open]) { overflow: hidden; }
   </style>
+  <script src="project-gallery.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">跳至主要內容</a>
@@ -138,5 +147,11 @@
   </main>
 
   <footer><div class="shell footer-inner"><span>林聖邦 Ben</span><a href="#top">回到頂端</a></div></footer>
+  <dialog id="project-preview" aria-label="專案截圖預覽">
+    <form class="preview-toolbar" method="dialog">
+      <button class="preview-close" type="submit" autofocus>關閉預覽</button>
+    </form>
+    <img alt="">
+  </dialog>
 </body>
 </html>
