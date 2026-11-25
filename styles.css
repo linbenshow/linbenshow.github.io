@@ -69,7 +69,6 @@ details { margin-top: .9rem; }
 summary { width: fit-content; cursor: pointer; color: var(--accent); font-weight: 700; font-size: .9375rem; }
 .project-visual { grid-column: 1; grid-row: 1; min-width: 0; padding: .55rem; background: var(--paper); border: 1px solid var(--line); border-radius: .85rem; }
 .project-screenshot { display: block; min-width: 0; overflow: hidden; border-radius: .5rem; }
-.project-screenshot img { display: block; width: 100%; max-width: 100%; height: auto; }
 .project-visual figcaption { margin: .55rem .25rem .15rem; color: var(--muted); font-size: .875rem; font-weight: 650; }
 .project-links { margin-top: 1.05rem; }
 
